@@ -1,0 +1,7 @@
+[org.gnome.desktop.session]
+idle-delay = 60
+
+[org.gnome.settings-daemon.plugins.power]
+ambient-enabled = false
+sleep-inactive-ac-type = 'nothing'
+sleep-inactive-battery-type = 'nothing'
