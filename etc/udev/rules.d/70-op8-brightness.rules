@@ -1,0 +1,1 @@
+ACTION=="add", RUN+="/bin/sh -c 'chown droidian:droidian /sys/class/backlight/panel0-backlight/*'"
