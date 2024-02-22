@@ -1,0 +1,6 @@
+[org.gnome.desktop.interface]
+# clock-format = '12h'
+show-battery-percentage = true
+
+[sm.puri.phosh.notifications]
+wakeup-screen-triggers = ['any']
