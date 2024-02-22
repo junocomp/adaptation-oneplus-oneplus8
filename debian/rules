@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_installsystemd:
+	dh_installsystemd -padaptation-oneplus-oneplus6-configs --name=brightness-boot brightness-boot.service --no-start
+	dh_installsystemd -padaptation-oneplus-oneplus6-configs --name=brightness-button brightness-button.service --no-start
+	dh_installsystemd -padaptation-oneplus-oneplus6-configs --name=camera-hal-force camera-hal-force.service --no-start
