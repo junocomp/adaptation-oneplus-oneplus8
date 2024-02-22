@@ -1,0 +1,10 @@
+[Unit]
+Description=Remember brightness when pressing power button
+After=sm.puri.Phosh.service
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /home/droidian/op8-brightness.sh
+
+[Install]
+WantedBy=default.target
