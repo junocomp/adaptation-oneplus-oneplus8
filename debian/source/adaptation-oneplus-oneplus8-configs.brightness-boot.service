@@ -1,1 +1,11 @@
+[Unit]
+Description=Fix screen being completely blank on startup
+Requires=lxc@android.service
+After=phosh.service
 
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'echo 255 > /sys/class/backlight/panel0-backlight/brightness'
+
+[Install]
+WantedBy=multi-user.target
