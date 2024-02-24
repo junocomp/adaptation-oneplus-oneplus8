@@ -1,5 +1,8 @@
 #!/bin/sh
 
+mkdir -p /home/droidian/.config
+touch /home/droidian/.config/backlight-brightness
+
 while true; do
 
 if [ $(wlr-randr | grep -i "enabled" | awk '{print $2}') = 'yes' ]; then
