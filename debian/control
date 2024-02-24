@@ -1,0 +1,19 @@
+Source: adaptation-oneplus-oneplus8
+Maintainer: caligaris <thelookouts@hotmail.com>
+Section: metapackages
+Priority: optional
+Build-Depends: debhelper (>= 10),
+               debhelper-compat (= 13),
+Standards-Version: 4.5.0.3
+
+Package: adaptation-oneplus-oneplus8
+Architecture: arm64
+Depends: ${misc:Depends},
+         adaptation-hybris-api29-phone,
+         adaptation-oneplus-oneplus8-configs (= ${binary:Version}),
+Description: Community adaptation for oneplus-oneplus8 - metapackage
+
+Package: adaptation-oneplus-oneplus8-configs
+Architecture: arm64
+Depends: ${misc:Depends},
+Description: Community adaptation for oneplus-oneplus8 - adaptation configurations
