@@ -8,7 +8,7 @@ override_dh_auto_install:
 	install -D -m 0644 debian/adaptation-oneplus-oneplus8-configs.brightness-button.service debian/adaptation-oneplus-oneplus8-configs/usr/lib/systemd/user/brightness-button.service
 
 override_dh_installsystemd:
-	dh_installsystemd -padaptation-oneplus-oneplus6-configs --name=brightness-boot brightness-boot.service --no-start
-	dh_installsystemd -padaptation-oneplus-oneplus6-configs --name=camera-hal-force camera-hal-force.service --no-start
-	dh_installsystemd -padaptation-oneplus-oneplus6-configs --name=droidian-perf droidian-perf.service --no-start
-	dh_installsystemd -padaptation-oneplus-oneplus6-configs --name=double-tap double-tap.service --no-start
+	dh_installsystemd -padaptation-oneplus-oneplus8-configs --name=brightness-boot brightness-boot.service --no-start
+	dh_installsystemd -padaptation-oneplus-oneplus8-configs --name=camera-hal-force camera-hal-force.service --no-start
+	dh_installsystemd -padaptation-oneplus-oneplus8-configs --name=droidian-perf droidian-perf.service --no-start
+	dh_installsystemd -padaptation-oneplus-oneplus8-configs --name=double-tap double-tap.service --no-start
