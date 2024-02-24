@@ -4,7 +4,7 @@ After=sm.puri.Phosh.service
 
 [Service]
 Type=simple
-ExecStart=/bin/sh /home/droidian/op8-brightness.sh
+ExecStart=/bin/sh /usr/bin/op8-brightness.sh
 
 [Install]
 WantedBy=default.target
